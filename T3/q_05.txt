@@ -1,0 +1,37 @@
+package q_05;
+import java.util.Scanner;
+public class alturasdosalunos {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int numalunomaisalto = 0, numalunomaisbaixo = 0;
+		int alturamaisalta = 0, alturamaisbaixa = Integer.MAX_VALUE;
+
+		for (int i = 1; i <= 10; i++) {
+			System.out.print("Digite o número do aluno " + i + ": ");
+			int numaluno = sc.nextInt();
+
+			System.out.print("Digite a altura do aluno " + i + " em cm: ");
+			int altura = sc.nextInt();
+
+			if (altura > alturamaisalta) {
+				alturamaisalta = altura;
+				numalunomaisalto = numaluno;
+			}
+
+			if (altura < alturamaisbaixa) {
+				alturamaisbaixa = altura;
+				numalunomaisbaixo = numaluno;
+			}
+		}
+
+		System.out.println("O aluno mais alto é o número " + numalunomaisalto + " com " + alturamaisalta + " cm");
+		System.out.println("O aluno mais baixo é o número " + numalunomaisbaixo + " com " + alturamaisbaixa + " cm");
+
+		sc.close();
+	
+
+	}
+
+}

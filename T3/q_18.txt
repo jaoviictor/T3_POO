@@ -1,0 +1,31 @@
+package q_18;
+import java.util.Scanner;
+public class principal {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+
+        System.out.println("Informe um número inteiro maior que 1:");
+        int num = sc.nextInt();
+
+        boolean pm = true;
+
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                pm = false;
+                break;
+            }
+        }
+
+        if (num <= 1) {
+            System.out.println("O número informado não é primo.");
+        } else if (pm) {
+        	System.out.println("O número informado é primo.");
+        } else {
+            System.out.println("O número informado não é primo.");
+        } 
+
+	}
+
+}
