@@ -1,5 +1,3 @@
-
-
 # 📌 T3_POO
 Terceiro trabalho de POO
 Questão Resolvidas
